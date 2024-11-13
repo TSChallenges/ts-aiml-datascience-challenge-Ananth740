@@ -17,6 +17,7 @@ def test_create_age_groups():
     assert 'age_group' in df.columns, "'Age_Group' column should be created"
     assert len(df['age_group'].unique()) == 4, "'Age_Group' should not have missing values"
 
+
 def test_encode_categorical_features():
     df = load_data('data/bank_churn.csv')
     df = handle_missing_values(df)

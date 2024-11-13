@@ -16,6 +16,7 @@ def test_missing_values():
     missing = df.isnull().sum()
     assert missing.sum() == 0, "There should be no missing values in the dataset"
 
+
 def test_summary_statistics():
     df = load_data('data/bank_churn.csv')
     summary = df.describe()

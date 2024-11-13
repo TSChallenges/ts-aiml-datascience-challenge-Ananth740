@@ -18,6 +18,7 @@ def test_define_features_target():
     assert isinstance(y, pd.Series), "Target should be a pandas Series"
     assert 'churn' in y.name, "Target column should be 'Exited'"
 
+
 def test_train_model():
     df = load_processed_data('data/processed_bank_churn.csv')
     x, y = define_features_target(df)
