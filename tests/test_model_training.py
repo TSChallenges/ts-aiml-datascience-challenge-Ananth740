@@ -3,7 +3,7 @@
 import pytest
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from src.model_training import load_processed_data, define_features_target, train_model, evaluate_model
+from src.model_training import load_processed_data, define_features_target, train_model, evaluate_model # type: ignore
 from sklearn.metrics import accuracy_score, f1_score
 
 def test_load_processed_data():

@@ -2,7 +2,7 @@
 
 import pytest
 import pandas as pd
-from src.data_exploration import load_data, check_missing_values, generate_summary_statistics
+from src.data_exploration import load_data, check_missing_values, generate_summary_statistics # type: ignore
 
 def test_load_data():
     df = load_data('data/bank_churn.csv')
